@@ -23,8 +23,8 @@
     <br>
     <div class='row'>
         <div class='col-sm-offset-2 col-sm-8 col-lg-4'>
-            <p class='info'>由Mozilla赞助并由全新的系统级编程语言 <a href='https://www.rust-lang.org'>Rust</a>,
-                编写，Servo项目旨在实现更好的并行性，安全性，模块化以及高性能。
+            <p class='info'>由 Mozilla 赞助并由全新的系统级编程语言 <a href='https://www.rust-lang.org'>Rust</a>,
+                编写，Servo 项目旨在实现更好的并行性，安全性，模块化以及高性能。
             </p>
 	    <div class='row'>
 	      <div class='col-sm-12'>
@@ -65,7 +65,7 @@
                 
             </p>
 
-            <h3>构建<</h3>
+            <h3>构建</h3>
             <p>Servo 是由 Cargo（Rust 的包管理器）构建的。 我们还使用 Mozilla 的 Mach 工具来编排构建和其他任务。</p>
 
             <h4>一般构建</h4>
@@ -113,22 +113,22 @@ cd servo
 			此举是为了防止在同一问题上贡献者们的重复劳动。
             </p>
 
-            <p>如果您在找那些显而易见的漏洞，请查看 GitHub 上
-			<a href="https://github.com/servo/servo/labels/E-easy">E-Easy 的 issue 标签</a> 。 （因为 E-Easy 更适于接收这些漏洞的报告）
+            <p>如果您在找那些对于初学者来说非常简单的漏洞，请查看 GitHub 上
+			<a href="https://github.com/servo/servo/labels/E-easy">E-Easy 的 issue 标签</a> 。
             </p>
 
-            <p>有关如何开始使用 Servo 的详细信息，请参阅
+            <p>有关如何开始修改 Servo 的详细信息，请参阅
                 <a href="https://github.com/servo/servo/blob/master/docs/HACKING_QUICKSTART.md">HACKING_QUICKSTART.md</a>。
             </p>
 
-            <h3>Pull 请求清单</h3>
+            <h3>Pull Request 检查清单</h3>
 
             <ul>
-                <li>请从主分支分支，如果需要请在提交 pull 请求之前重组到当前主分支。
+                <li>请从主分支分支，如果需要请在提交 Pull Request 之前重组到当前主分支。
 				如果它不能与主分支完全合并，您可能会被要求退回您的更改。
                 </li>
 
-                <li>请不要将子模块更新放在您的pull请求中，除非它们影响提交。
+                <li>请不要将子模块更新放在您的 Pull Request 中，除非它们影响提交。
                 </li>
 
                 <li>如果您的补丁没有得到审核，或者您需要特定的人来审核，
@@ -137,7 +137,7 @@ cd servo
 				如需中文服务请联系：[KiChjang](https://github.com/KiChjang) 和 [shinglyu](https://github.com/shinglyu)
                 </li>
 
-                <li>为新功能或修复错误添加相关测试。对于DOM的修改，通常需要一个Web平台测试、布局及反复测试。有关详细信息，请参阅
+                <li>为新功能或修复错误添加相关测试。DOM 的修改通常需要一个 Web 平台测试；布局的修改需要一个参考测试（reftest）。有关详细信息，请参阅
                     <a href="https://github.com/servo/servo/wiki/Testing">测试指南</a>。
                 </li>
 
