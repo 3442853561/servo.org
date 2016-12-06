@@ -6,6 +6,22 @@
     <title>Servo 一个并行浏览器引擎</title>
     <link rel='stylesheet' href='/css/bootstrap.css'/>
     <link rel='stylesheet' href='/css/style.css'/>
+	<script type="text/javascript">
+		currentLang = navigator.language;
+		if(!currentLang){
+			currentLang = navigator.browserLanguage;
+		}
+		switch (currentLang) {
+			case "en-US":
+				self.location="https://servo.org/index.html";
+			break;
+			case "zh-CN":
+				self.location="https://servo.org/zh-CN/index.html";
+			break;
+			default:
+				self.location="https://servo.org/index.html";
+		}
+	</script>
 </head>
 
 <body>
@@ -173,12 +189,6 @@ cd servo
 
         </div>
     </div>
-	<footer>
-		<p>此页面汉化由 <a href="https://github.com/3442853561">3442853561</a> 提供</p>
-    	<p>其他本土化页面：
-        	<a href="/index.html">English</a>
-    	</p>
-	</footer>
     <div class='row'>
         <div class='col-sm-offset-2 col-sm-8'>
 
@@ -194,6 +204,12 @@ cd servo
                 </div>
                 <div class='col-md-3'>
                     <p class='text-muted'>#servo 在 irc.mozilla.org</p>
+                </div>
+				<div class='col-md-3'>
+					<br/>
+                    <p>其他本土化页面<br/>
+					<a href="/index.html">English</a></p>
+					<br/>
                 </div>
             </footer>
         </div>
